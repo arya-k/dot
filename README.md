@@ -4,7 +4,7 @@ Heavily inspired by [this post](https://www.atlassian.com/git/tutorials/dotfiles
 
 ## Fresh Install Steps:
 Make sure to have homebrew installed. Then, run the following in a fresh terminal:
-```
+```bash
 git clone --bare https://bitbucket.org/durdn/cfg.git $HOME/.cfg
 function dot {
    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
