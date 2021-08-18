@@ -1,6 +1,3 @@
-# TODO:
-# Window snapping (yabai?)
-
 # Aliases and exports
 export EDITOR="nvim"
 export CLICOLOR=1

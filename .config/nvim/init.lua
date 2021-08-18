@@ -44,7 +44,9 @@ require "nvim-treesitter.configs".setup {
 }
 
 -- Vscode Comment
-vim.api.nvim_set_keymap("x", "gc", "<Plug>VSCodeCommentary", { silent = true });
-vim.api.nvim_set_keymap("n", "gc", "<Plug>VSCodeCommentary", { silent = true });
-vim.api.nvim_set_keymap("o", "gc", "<Plug>VSCodeCommentary", { silent = true });
-vim.api.nvim_set_keymap("n", "gcc","<Plug>VSCodeCommentaryLine", { silent = true });
+if vim.fn.exists('g:vscode') then
+    vim.api.nvim_set_keymap("x", "gc", "<Plug>VSCodeCommentary", { silent = true });
+    vim.api.nvim_set_keymap("n", "gc", "<Plug>VSCodeCommentary", { silent = true });
+    vim.api.nvim_set_keymap("o", "gc", "<Plug>VSCodeCommentary", { silent = true });
+    vim.api.nvim_set_keymap("n", "gcc","<Plug>VSCodeCommentaryLine", { silent = true });
+end
