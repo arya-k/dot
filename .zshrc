@@ -1,6 +1,5 @@
 # TODO:
 # Window snapping (yabai?)
-# neovim: init.lua
 
 # Aliases and exports
 export EDITOR="nvim"
@@ -28,13 +27,14 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt INC_APPEND_HISTORY
 
-# Install Starship + Pazi
+# Starship + Pazi
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)" 
 
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS="--height 40% --border"
+
 
 # Dotfiles
 alias dot="git --git-dir=$HOME/.dot/ --work-tree=$HOME"
