@@ -3,7 +3,7 @@ export EDITOR="nvim"
 export CLICOLOR=1
 export BAT_THEME="Nord"
 
-PATH="/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin"
+PATH="/Users/arya/.cargo/bin:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin"
 alias less="less -R"
 alias grep="grep --color=auto"
 alias cat="bat -p --paging=never"
@@ -22,7 +22,9 @@ fi;
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
-setopt INC_APPEND_HISTORY
+setopt appendhistory
+setopt sharehistory
+setopt incappendhistory
 
 # Starship + Pazi
 eval "$(starship init zsh)"
