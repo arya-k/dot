@@ -1,0 +1,20 @@
+{
+    "workbench.colorTheme": "Nord",
+    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+    "workbench.list.automaticKeyboardNavigation": false,
+
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "terminal.integrated.inheritEnv": false,
+    
+    "editor.rulers": [
+        100
+    ],
+    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM }",
+    "editor.formatOnType": true,
+    "python.formatting.blackPath": "/Users/arya/Library/Python/3.8/bin/black",
+    "python.formatting.provider": "black",
+    "window.zoomLevel": 1
+}
