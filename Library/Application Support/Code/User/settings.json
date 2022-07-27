@@ -9,10 +9,10 @@
     "editorBracketHighlight.foreground3": "#c172d9",
     "editorBracketHighlight.foreground6": "#abb2c0"
   },
-  "editor.rulers": [100],
+  "editor.rulers": [
+    100
+  ],
   "workbench.list.automaticKeyboardNavigation": false,
-  "workbench.colorTheme": "Dracula",
-  "C_Cpp.autocomplete": "Disabled",
   "editor.formatOnSave": true,
   "explorer.confirmDragAndDrop": false,
   "github.copilot.enable": {
@@ -31,8 +31,6 @@
   "editor.inlineSuggest.enabled": true,
   "editor.accessibilitySupport": "off",
   "rust-analyzer.checkOnSave.command": "clippy",
-  "C_Cpp.errorSquiggles": "Disabled",
-  "C_Cpp.intelliSenseEngine": "Disabled",
   "security.workspace.trust.untrustedFiles": "open",
   "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
   "editor.bracketPairColorization.enabled": true,
@@ -45,14 +43,7 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "python.defaultInterpreterPath": "/usr/local/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/bin/python3.9",
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "files.exclude": {
-    "**/.classpath": true,
-    "**/.project": true,
-    "**/.settings": true,
-    "**/.factorypath": true
-  },
-  "errorLens.enabled": true
+  "errorLens.enabled": true,
+  "workbench.colorTheme": "Nord"
 }
