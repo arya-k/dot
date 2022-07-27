@@ -34,7 +34,6 @@ eval "$(zoxide init zsh)"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS="--height 40% --border"
 
-
 # Dotfiles
 alias dot="git --git-dir=$HOME/.dot/ --work-tree=$HOME"
 

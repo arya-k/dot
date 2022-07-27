@@ -1,30 +1,58 @@
 {
-    "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
-    "workbench.list.automaticKeyboardNavigation": false,
-    "terminal.integrated.inheritEnv": false,
-    "editor.rulers": [
-        100
-    ],
-    "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM }",
-    "editor.formatOnType": true,
-    "python.formatting.provider": "black",
-    "editor.minimap.enabled": false,
-    "git.confirmSync": false,
-    "git.autofetch": true,
-    "editor.formatOnSave": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "workbench.colorTheme": "Nord",
-    "editor.bracketPairColorization.enabled": true,
-    "workbench.colorCustomizations": {
-        "editorBracketHighlight.foreground1": "#5caeef",
-        "editorBracketHighlight.foreground2": "#dfb976",
-        "editorBracketHighlight.foreground3": "#c172d9",
-        "editorBracketHighlight.foreground4": "#4fb1bc",
-        "editorBracketHighlight.foreground5": "#97c26c",
-        "editorBracketHighlight.foreground6": "#abb2c0",
-        "editorBracketHighlight.unexpectedBracket.foreground": "#db6165"
-    },
-    "C_Cpp.intelliSenseEngine": "Disabled",
-    "git.enableSmartCommit": true,
-    "explorer.confirmDragAndDrop": false,
+  "git.enableSmartCommit": true,
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#5caeef",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#db6165",
+    "editorBracketHighlight.foreground4": "#4fb1bc",
+    "editorBracketHighlight.foreground2": "#dfb976",
+    "editorBracketHighlight.foreground5": "#97c26c",
+    "editorBracketHighlight.foreground3": "#c172d9",
+    "editorBracketHighlight.foreground6": "#abb2c0"
+  },
+  "editor.rulers": [100],
+  "workbench.list.automaticKeyboardNavigation": false,
+  "workbench.colorTheme": "Dracula",
+  "C_Cpp.autocomplete": "Disabled",
+  "editor.formatOnSave": true,
+  "explorer.confirmDragAndDrop": false,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": true,
+    "rust": false
+  },
+  "python.formatting.provider": "black",
+  "git.confirmSync": false,
+  "editor.formatOnType": true,
+  "git.autofetch": true,
+  "terminal.integrated.inheritEnv": false,
+  "editor.minimap.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.accessibilitySupport": "off",
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "C_Cpp.errorSquiggles": "Disabled",
+  "C_Cpp.intelliSenseEngine": "Disabled",
+  "security.workspace.trust.untrustedFiles": "open",
+  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+  "editor.bracketPairColorization.enabled": true,
+  "workbench.editorAssociations": {
+    "*.out": "default"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "python.defaultInterpreterPath": "/usr/local/Cellar/python@3.9/3.9.9/Frameworks/Python.framework/Versions/3.9/bin/python3.9",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "errorLens.enabled": true
 }
