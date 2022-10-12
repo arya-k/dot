@@ -1,5 +1,10 @@
 {
+  // Git
   "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
   "workbench.colorCustomizations": {
     "editorBracketHighlight.foreground1": "#5caeef",
     "editorBracketHighlight.unexpectedBracket.foreground": "#db6165",
@@ -12,38 +17,38 @@
   "editor.rulers": [
     100
   ],
-  "workbench.list.automaticKeyboardNavigation": false,
+  // Neovim
+  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
+  "editor.accessibilitySupport": "off",
+  // Linting / formatting
   "editor.formatOnSave": true,
-  "explorer.confirmDragAndDrop": false,
+  "editor.formatOnType": true,
+  "python.formatting.provider": "black",
+  "rust-analyzer.checkOnSave.command": "clippy",
+  "errorLens.enabled": true,
   "github.copilot.enable": {
     "*": true,
     "yaml": false,
     "plaintext": true,
     "markdown": true,
-    "rust": false
+    "rust": true
   },
-  "python.formatting.provider": "black",
-  "git.confirmSync": false,
-  "editor.formatOnType": true,
-  "git.autofetch": true,
-  "terminal.integrated.inheritEnv": false,
-  "editor.minimap.enabled": false,
-  "editor.inlineSuggest.enabled": true,
-  "editor.accessibilitySupport": "off",
-  "rust-analyzer.checkOnSave.command": "clippy",
+  "[go]": {
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[html]": {
+    "editor.formatOnSave": false,
+  },
+  "explorer.confirmDragAndDrop": false,
   "security.workspace.trust.untrustedFiles": "open",
-  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
-  "editor.bracketPairColorization.enabled": true,
-  "workbench.editorAssociations": {
-    "*.out": "default"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.suggestSelection": "first",
-  "errorLens.enabled": true,
-  "workbench.colorTheme": "Nord"
+  "workbench.colorTheme": "Dracula",
+  "go.inlayHints.assignVariableTypes": true,
+  "go.inlayHints.compositeLiteralFields": true,
+  "go.inlayHints.constantValues": true,
+  "editor.stickyScroll.enabled": true,
+  "go.toolsManagement.autoUpdate": true,
+  "liveshare.presence": true,
 }
