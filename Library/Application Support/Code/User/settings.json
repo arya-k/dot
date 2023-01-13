@@ -27,6 +27,7 @@
   "editor.formatOnType": true,
   "python.formatting.provider": "black",
   "rust-analyzer.checkOnSave.command": "clippy",
+  "rust-analyzer.cargo.buildScripts.enable": true,
   "errorLens.enabled": true,
   "github.copilot.enable": {
     "*": true,
@@ -35,20 +36,17 @@
     "markdown": true,
     "rust": true
   },
-  "[go]": {
-    "editor.insertSpaces": true,
-    "editor.defaultFormatter": "golang.go"
-  },
   "[html]": {
     "editor.formatOnSave": false,
   },
   "explorer.confirmDragAndDrop": false,
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.colorTheme": "Dracula",
   "go.inlayHints.assignVariableTypes": true,
   "go.inlayHints.compositeLiteralFields": true,
   "go.inlayHints.constantValues": true,
   "editor.stickyScroll.enabled": true,
   "go.toolsManagement.autoUpdate": true,
   "liveshare.presence": true,
+  "workbench.colorTheme": "Dracula",
+  "jupyter.askForKernelRestart": false,
 }

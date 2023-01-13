@@ -45,4 +45,6 @@ if [[ "$TERM" == "xterm-kitty" ]]; then
 fi
 
 # Bonsai!
-cbonsai -p
+if [[ "$TERM_PROGRAM" != "vscode" ]]; then
+  cbonsai -p
+fi
