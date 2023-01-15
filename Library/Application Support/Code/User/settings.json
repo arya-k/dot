@@ -1,8 +1,4 @@
 {
-  // Git
-  "git.enableSmartCommit": true,
-  "git.confirmSync": false,
-  "git.autofetch": true,
   "editor.minimap.enabled": false,
   "editor.bracketPairColorization.enabled": true,
   "workbench.colorCustomizations": {
@@ -17,6 +13,14 @@
   "editor.rulers": [
     100
   ],
+  "explorer.confirmDragAndDrop": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.stickyScroll.enabled": true,
+  "workbench.colorTheme": "Dracula",
+  // Git
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
   // Neovim
   "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
   "editor.suggestSelection": "first",
@@ -30,23 +34,7 @@
   "rust-analyzer.cargo.buildScripts.enable": true,
   "errorLens.enabled": true,
   "github.copilot.enable": {
-    "*": true,
-    "yaml": false,
-    "plaintext": true,
-    "markdown": true,
-    "rust": true
+    "*": true
   },
-  "[html]": {
-    "editor.formatOnSave": false,
-  },
-  "explorer.confirmDragAndDrop": false,
-  "security.workspace.trust.untrustedFiles": "open",
-  "go.inlayHints.assignVariableTypes": true,
-  "go.inlayHints.compositeLiteralFields": true,
-  "go.inlayHints.constantValues": true,
-  "editor.stickyScroll.enabled": true,
-  "go.toolsManagement.autoUpdate": true,
-  "liveshare.presence": true,
-  "workbench.colorTheme": "Dracula",
-  "jupyter.askForKernelRestart": false,
+  "editor.lineNumbers": "relative",
 }

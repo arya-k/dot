@@ -1,7 +1,7 @@
 # Aliases and exports
 export EDITOR="nvim"
 export CLICOLOR=1
-export BAT_THEME="Nord"
+export BAT_THEME="Dracula"
 
 PATH="/usr/local/bin:/Users/arya/.cargo/bin:/Users/arya/.local/bin:/usr/sbin:/sbin:/bin:/usr/bin"
 alias less="less -R"
@@ -42,9 +42,4 @@ alias dot="git --git-dir=$HOME/.dot/ --work-tree=$HOME"
 # Kitty
 if [[ "$TERM" == "xterm-kitty" ]]; then
   alias s="kitty +kitten ssh";
-fi
-
-# Bonsai!
-if [[ "$TERM_PROGRAM" != "vscode" ]]; then
-  cbonsai -p
 fi
