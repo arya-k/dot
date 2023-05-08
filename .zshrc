@@ -2,7 +2,10 @@
 export EDITOR="nvim"
 export CLICOLOR=1
 export BAT_THEME="Dracula"
-export PATH="/usr/local/bin:/Users/arya/.cargo/bin:/Users/arya/.local/bin:/usr/sbin:/sbin:/bin:/usr/bin"
+export PATH="/Users/arya/.cargo/bin:/Users/arya/.local/bin:/usr/sbin:/sbin:/bin:/usr/bin"
+
+# homebrew
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 alias less="less -R"
 alias grep="grep --color=auto"

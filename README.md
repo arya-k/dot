@@ -8,18 +8,18 @@ Backup the `.ssh` and `.zsh_history` files, as well as any other files not in th
 ## Fresh Install Steps:
 Make sure to have homebrew installed.
 - Install the `.ssh` folder (and maybe `.zsh_history` while you're at it).
-- Set your wallpapers (in ~/Library/Wallpapers)
 - Rebind Caps Lock -> Escape
-
-Then, run the following in a fresh terminal:
+- Run the following in a fresh terminal:
 
 ```bash
-git clone --bare git@github.com:arya-k/dot.git $HOME/.cfg
+git clone --bare git@github.com:arya-k/dot.git $HOME/.dot
 function dot {
-   /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
+   /usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME $@
 }
 dot checkout
 echo "Checked out dotfiles.";
 dot config status.showUntrackedFiles no
 brew bundle install --cleanup
 ```
+
+- Set your wallpapers (in ~/Library/Wallpapers)
