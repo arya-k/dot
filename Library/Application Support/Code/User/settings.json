@@ -16,7 +16,8 @@
   "explorer.confirmDragAndDrop": false,
   "security.workspace.trust.untrustedFiles": "open",
   "editor.stickyScroll.enabled": true,
-  "workbench.colorTheme": "Dracula",
+  "editor.fontLigatures": true,
+  "editor.guides.bracketPairs": "active",
   // Git
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
@@ -26,6 +27,9 @@
   "editor.suggestSelection": "first",
   "editor.inlineSuggest.enabled": true,
   "editor.accessibilitySupport": "off",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
   // Linting / formatting
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
@@ -34,7 +38,26 @@
   "rust-analyzer.cargo.buildScripts.enable": true,
   "errorLens.enabled": true,
   "github.copilot.enable": {
-    "*": true
+    "*": true,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false,
+    "yaml": false
   },
   "editor.lineNumbers": "relative",
+  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "files.associations": {
+    "justfile": "makefile"
+  },
+  "errorLens.excludeBySource": [
+    "Pylance(reportGeneralTypeIssues)"
+  ],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "explorer.confirmDelete": false,
+  "workbench.colorTheme": "Dracula"
 }

@@ -2,13 +2,17 @@
 export EDITOR="nvim"
 export CLICOLOR=1
 export BAT_THEME="Dracula"
+export PATH="/usr/local/bin:/Users/arya/.cargo/bin:/Users/arya/.local/bin:/usr/sbin:/sbin:/bin:/usr/bin"
 
-PATH="/usr/local/bin:/Users/arya/.cargo/bin:/Users/arya/.local/bin:/usr/sbin:/sbin:/bin:/usr/bin"
 alias less="less -R"
 alias grep="grep --color=auto"
 alias cat="bat -p --paging=never"
 alias ls=exa
 alias vim=nvim
+
+# ssh
+alias optim="multipass shell optim" # for perf-engineering course
+alias feral="~/.ssh/feral.expect" # feral-hosting has no ssh keys :(
 
 # Compinit
 autoload -Uz compinit 
@@ -34,7 +38,14 @@ eval "$(zoxide init zsh)"
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_OPTS="--height 40% --border"
-alias pf="fzf --height 100% --preview 'bat --style=numbers --color=always --line-range :1000 {}'"
+
+pf() { # preview files in current directory
+  fzf \
+    --height 100% \
+    --preview 'bat --style=numbers --color=always --line-range :1000 {}' \
+    --preview-window right,75% \
+    $1;
+}
 
 # Dotfiles
 alias dot="git --git-dir=$HOME/.dot/ --work-tree=$HOME"
