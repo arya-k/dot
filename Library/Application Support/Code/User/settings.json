@@ -23,7 +23,7 @@
   "git.confirmSync": false,
   "git.autofetch": true,
   // Neovim
-  "vscode-neovim.neovimExecutablePaths.darwin": "/usr/local/bin/nvim",
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
   "editor.suggestSelection": "first",
   "editor.inlineSuggest.enabled": true,
   "editor.accessibilitySupport": "off",
@@ -45,19 +45,20 @@
     "yaml": false
   },
   "editor.lineNumbers": "relative",
-  "C_Cpp.clang_format_fallbackStyle": "Google",
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
   "[python]": {
     "editor.formatOnType": true
   },
   "files.associations": {
     "justfile": "makefile"
   },
-  "errorLens.excludeBySource": [
-    "Pylance(reportGeneralTypeIssues)"
-  ],
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "explorer.confirmDelete": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "python.defaultInterpreterPath": "/Users/arya/Developer/credit-card/.venv",
+  "svelte.enable-ts-plugin": true,
+  "C_Cpp.clang_format_fallbackStyle": "LLVM",
+  "editor.fontFamily": "'Jetbrains Mono', Menlo, Monaco, 'Courier New', monospace",
   "workbench.colorTheme": "Dracula"
 }

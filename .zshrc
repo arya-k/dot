@@ -2,7 +2,6 @@
 export EDITOR="nvim"
 export CLICOLOR=1
 export BAT_THEME="Dracula"
-export PATH="/Users/arya/.cargo/bin:/Users/arya/.local/bin:/usr/sbin:/sbin:/bin:/usr/bin"
 
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -36,7 +35,6 @@ setopt histignorealldups
 
 # Starship + zoxide
 eval "$(starship init zsh)"
-eval "$(zoxide init zsh)" 
 
 # Fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -57,3 +55,6 @@ alias dot="git --git-dir=$HOME/.dot/ --work-tree=$HOME"
 if [[ "$TERM" == "xterm-kitty" ]]; then
   alias s="kitty +kitten ssh";
 fi
+
+# Golang
+export GOPATH=~/.cache/go
